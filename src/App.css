@@ -1,0 +1,66 @@
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  font-family: 'Arial', sans-serif; /* Font style */
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #575757; /* Hover effect for buttons */
+}
+
+.navbar {
+  background-color: #1f1f1f; /* Dark navbar */
+  padding: 15px;
+}
+
+.navbar a {
+  color: #ffffff; /* Navbar link color */
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.container {
+  background-color: #1e1e1e; /* Darker container for content */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+      padding: 10px;
+  }
+
+  button {
+      width: 100%; /* Full width buttons on small screens */
+  }
+}

@@ -1,0 +1,166 @@
+/* Home Page Styling */
+
+/* General container for the home page */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.home-container {
+    background-color: #121212; /* Dark background for home page */
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px 0;
+}
+
+/* Title styling */
+.home-container h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Task form styling */
+.task-form {
+    background-color: #1f1f1f;
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.task-form input,
+.task-form select,
+.task-form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #4CAF50;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.task-form input,
+.task-form select {
+    background-color: #333;
+    color: white;
+}
+
+.task-form button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.task-form button:hover {
+    background-color: #45a049;
+}
+
+/* Task list styling */
+.task-list {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Style each task item to have a consistent size and shape */
+.task-item {
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    min-height: 100px;
+    box-sizing: border-box;
+}
+
+.task-item.completed {
+    background-color: #3a3a3a;
+    text-decoration: line-through;
+}
+
+.task-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-details h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #fff;
+}
+
+.task-details p {
+    font-size: 1rem;
+    margin: 0;
+    color: #f0ebf4;
+}
+
+/* Priority labels with specified colors and black text */
+.priority {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #faf6f6; /* Black text for visibility */
+}
+
+.priority.low {
+    background-color: #00e900; /* Green background for low priority */
+}
+
+.priority.medium {
+    background-color: #ec4b0b; /* Yellow background for medium priority */
+}
+
+.priority.high {
+    background-color: #cb0d23; /* Red background for high priority */
+}
+
+/* Styling for action buttons with visible text */
+.task-actions button {
+    background-color: #007BFF;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.task-actions button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .task-form {
+        width: 90%;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: unset;
+    }
+
+    .task-actions button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
